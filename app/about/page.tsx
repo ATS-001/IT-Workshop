@@ -36,8 +36,9 @@ export default function AboutPage() {
               </div>
               <h1 className="text-xl font-bold text-gray-900 tracking-tight">IT-Workshop</h1>
             </Link>
-            <nav>
+            <nav className="flex space-x-4">
               <Link href="/" className="text-sm font-medium text-gray-600 hover:text-gray-900">Home</Link>
+              <Link href="/guide" className="text-sm font-medium text-gray-600 hover:text-gray-900">Study Guide</Link>
             </nav>
           </div>
         </div>
