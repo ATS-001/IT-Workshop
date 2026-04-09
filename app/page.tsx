@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { BookOpen, Github, ArrowRight } from 'lucide-react';
+import { BookOpen, Github, ArrowRight, ExternalLink } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -34,22 +34,33 @@ export default function LandingPage() {
           A comprehensive study guide application for Computer Science Viva and Lab Exam questions.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 mb-12">
-          <Link 
-            href="/guide" 
-            className="inline-flex items-center justify-center px-8 py-4 text-base font-medium rounded-xl text-white bg-blue-600 hover:bg-blue-700 transition-colors shadow-sm hover:shadow-md"
-          >
-            Start Studying
-            <ArrowRight className="w-5 h-5 ml-2" />
-          </Link>
+        <div className="flex flex-col items-center gap-4 mb-12">
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link 
+              href="/guide" 
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-medium rounded-xl text-white bg-blue-600 hover:bg-blue-700 transition-colors shadow-sm hover:shadow-md"
+            >
+              Start Studying
+              <ArrowRight className="w-5 h-5 ml-2" />
+            </Link>
+            <a 
+              href="https://github.com/ATS-001/IT-Workshop" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-medium rounded-xl text-gray-700 bg-white border border-gray-300 hover:bg-gray-50 transition-colors shadow-sm hover:shadow-md"
+            >
+              <Github className="w-5 h-5 mr-2" />
+              View on GitHub
+            </a>
+          </div>
           <a 
-            href="https://github.com/ATS-001/IT-Workshop" 
+            href="https://hexnicai.vercel.app/" 
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-4 text-base font-medium rounded-xl text-gray-700 bg-white border border-gray-300 hover:bg-gray-50 transition-colors shadow-sm hover:shadow-md"
+            className="inline-flex items-center justify-center px-8 py-4 text-base font-medium rounded-xl text-indigo-700 bg-indigo-50 border border-indigo-200 hover:bg-indigo-100 transition-colors shadow-sm hover:shadow-md w-full sm:w-auto"
           >
-            <Github className="w-5 h-5 mr-2" />
-            View on GitHub
+            <ExternalLink className="w-5 h-5 mr-2" />
+            HexnicAI
           </a>
         </div>
 
